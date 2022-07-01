@@ -19,6 +19,16 @@ body {
   transform:scale(0.3); 
 }
 
+h1 {
+  display: block;
+  width: 100%;
+  top: 68%;
+  left: 1%;
+  position: absolute;
+  text-align: center;
+  font-family: sans-serif;
+  color: #FFF;
+}
 
 
 .spinner {
