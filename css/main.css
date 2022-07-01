@@ -25,7 +25,7 @@ body {
   transform: translateX(-50%);
 }
 .spinner .ball-container {
-  width: 40px;
+  width: 30px;
   transform: translate(130px, -140px);
 }
 .spinner .ball {
