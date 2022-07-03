@@ -31,8 +31,8 @@ body {
 
 .spinner {
   position: fixed;
-  top: 40%;
-  left: 50%;
+  top: 38%;
+  left: 49%;
   height: 30%;
   text-align: center;
   transform: translateX(-50%);
