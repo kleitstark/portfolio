@@ -5,6 +5,7 @@ body {
 
 
 
+
 /*Preloader START*/
 
 .loader {
@@ -15,6 +16,7 @@ body {
   top: 0;
   background: #333;
   transform:scale(0.4); 
+  
 }
 
 .loader-text {
@@ -22,18 +24,35 @@ body {
   left: 50%;
   top: 50%;
   margin-left: -65px;
-  margin-top: 25px;
+  margin-top: 50%;
   color: #fff;
   font-size: 36px;
 }
+
+@media screen and (min-width: 1689px) {
+  .loader-text {
+    margin-left: -65px;
+    margin-top: 35%;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1690px) {
+  .loader-text {
+    margin-left: -65px;
+    margin-top: 50%;
+    color:  #fff;
+  }
+}
+
 
 
 
 .spinner {
   position: fixed;
-  top: 38%;
+  top: 40%;
   left: 49%;
-  height: 30%;
+  height: 20%;
   text-align: center;
   transform: translateX(-50%);
 }
