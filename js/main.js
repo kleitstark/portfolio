@@ -1,5 +1,5 @@
 const loader = document.querySelector('.loader');
-
+/*
 function init() {
     setTimeout(() => {
       loader.style.opacity = 0;
@@ -7,4 +7,4 @@ function init() {
     }, 1300);
   }
 init();
-
+*/

@@ -1,6 +1,8 @@
 body {
   background-color: #333;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 
 /*Preloader START*/
@@ -12,29 +14,26 @@ body {
   left: 0;
   top: 0;
   background: #333;
-  z-index: 99999;
-  -webkit-transform:scale(0.3);
-  -moz-transform:scale(0.3);
-  -ms-transform:scale(0.3);
-  transform:scale(0.3); 
+  transform:scale(0.4); 
 }
 
-h1 {
-  display: block;
-  width: 100%;
-  top: 68%;
-  left: 1%;
+.loader-text {
   position: absolute;
-  text-align: center;
-  font-family: sans-serif;
-  color: #FFF;
+  left: 50%;
+  top: 50%;
+  margin-left: -65px;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 36px;
 }
+
 
 
 .spinner {
-  position: absolute;
+  position: fixed;
   top: 40%;
   left: 50%;
+  height: 30%;
   text-align: center;
   transform: translateX(-50%);
 }
