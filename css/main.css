@@ -1,25 +1,13 @@
-body {
-  background-color: rgb(110, 110, 110);
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
-
-/*Preloader START*/
+/*Preloader*/
 
 .loader {
   position: fixed;
   width: 100%;
   height: 100vh;
   background: #333;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 
@@ -266,9 +254,33 @@ body {
   }
 }/*# sourceMappingURL=other.css.map */
 
-/*Preloader END*/
 
 
+
+
+body {
+  background-color: rgb(46, 46, 46);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*Particles background*/
+
+#background{
+  width: 100%;
+  height: 100vh;
+  display:  block; 
+}
 
 
 
