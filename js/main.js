@@ -1,18 +1,12 @@
-const loader = document.querySelector('.loader');
-const main = document.querySelector('.main');
 
-
-
-function init() {
+function closeLoader() {
     setTimeout(() => {
-      loader.style.opacity = 100;
-      loader.style.display = 'none';
-
-      main.style.display = 'flex';
-      setTimeout (() => (main.style.opacity = 1), 50);
-    }, 1300);
+      const loader = document.querySelector('.loader');
+      loader.style.opacity = '0';
+    }, 1100);
   }
-init();
+closeLoader();
+
 
 
 

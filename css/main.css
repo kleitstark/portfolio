@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 
@@ -14,10 +19,10 @@ body {
   width: 100%;
   height: 100vh;
   background: #333;
-  transition: opacity 0.3s ease-out;
-  opacity: 1;
-
+  transition: opacity 0.8s ease-in-out;
 }
+
+
 
 .loader-text {
   position: absolute;
@@ -266,16 +271,6 @@ body {
 
 
 
-.main {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease-in;
-  opacity: 0;
-}
 
 
 
