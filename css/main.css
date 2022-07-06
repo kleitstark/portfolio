@@ -308,7 +308,7 @@ nav .logo {
 nav ul li {  
   list-style: none;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
   text-transform: uppercase;
 }
 
@@ -373,7 +373,9 @@ nav ul li a:hover {
   color: #ff9100;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+@media (max-width: 768px){
   .type-wrap h1 {
-    font-size: 50px;
+    font-size: 20px;
 }}
