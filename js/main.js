@@ -1,4 +1,4 @@
-/*Loader*/
+//Loader
 
 function closeLoader() {
   setTimeout(() => {
@@ -15,3 +15,12 @@ closeLoader()
 particlesJS.load('particles-js', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });    
+
+//Typed String
+var typed = new Typed(".auto-type", {
+  strings: ["Francesco Santoro","a Software Developer", "a Musician", "a Drummer", "Sleeping :)"],
+  typeSpeed: 100,
+  backSpeed: 20,
+  loop: true
+})
+  
