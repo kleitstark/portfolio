@@ -1,11 +1,4 @@
-h1 {
-  display: block;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  font-family: sans-serif;
-  color: #FFF;
-}
+
 
 .spinner {
   position: absolute;
@@ -205,6 +198,11 @@ h1 {
     transform: translate(0px, 0px) scale(1);
   }
 }/*# sourceMappingURL=main.css.map */
+
+
+
+
+
 
 
 
