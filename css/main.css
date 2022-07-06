@@ -372,3 +372,8 @@ nav ul li a:hover {
 .type-wrap span {
   color: #ff9100;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .type-wrap h1 {
+    font-size: 50px;
+}}
