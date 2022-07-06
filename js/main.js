@@ -23,4 +23,8 @@ var typed = new Typed(".auto-type", {
   backSpeed: 20,
   loop: true
 })
+
+//parallax
+
+                                         
   

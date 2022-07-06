@@ -257,6 +257,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+section {
+
+}
 
 
 
@@ -295,7 +298,7 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 5px 8% 10px 8%;
+  padding: 5px 27% 10px 27%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -303,6 +306,10 @@ nav {
 
 nav .logo {
   width: 100px;
+}
+
+nav ul {
+  display: flex;
 }
 
 nav ul li {  
@@ -339,6 +346,21 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.profile-avatar  {
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0%,100% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+
+
 .avatar {
   max-width: 100%;
   max-height: 100%;
@@ -346,6 +368,7 @@ nav ul li a:hover {
 
 .back-particles {
   position: absolute;
+  background-size: cover;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -360,7 +383,7 @@ nav ul li a:hover {
   display: inline-block;
   width: auto;
   height: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .type-wrap h1 {
@@ -379,3 +402,92 @@ nav ul li a:hover {
   .type-wrap h1 {
     font-size: 20px;
 }}
+
+
+
+
+/*btn nav*/
+
+
+nav .menu-btn i{
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    overflow: visible!important;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+
+
+.container-about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 27% 10px 27%;
+}
+
+.container-portfolio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #485461;
+  text-align: center;
+  padding: 5px 27% 10px 27%;
+}
