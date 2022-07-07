@@ -419,7 +419,8 @@ ul li.active a {
 @media (max-width: 768px){
   .type-wrap h1 {
     font-size: 20px;
-}}
+  }
+}
 
 
 
@@ -478,6 +479,10 @@ input[type="checkbox"]{
     border-radius: 0px 20px 0px 0px;
   }
 
+  header.sticky {
+    padding: 5px 50px;
+  }
+
 
   #click:checked ~ ul{
     left: 0;
@@ -485,6 +490,8 @@ input[type="checkbox"]{
 
   header .logo {
     margin-left: 0;
+    width: 150px;
+    height: 24px;
   }
 
   .fas {
