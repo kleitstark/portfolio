@@ -309,6 +309,10 @@ header.sticky {
   background: rgb(23, 23, 23);
 }
 
+header.sticky2 {
+
+}
+
 header .logo {
   width: 110px;
   margin-left: 20%;
@@ -439,6 +443,7 @@ input[type="checkbox"]{
     padding: 25px 40px 0 50px;
   }
   
+
   header .logo {
     margin-left: 0;
   }
@@ -449,7 +454,7 @@ input[type="checkbox"]{
 }
 
 
-@media (max-width: 920px) {
+@media (max-width: 844px) {
   header .menu-btn i{
     display: block;
   }
@@ -460,17 +465,19 @@ input[type="checkbox"]{
   }
   header ul{
     position: absolute;
-    top: 20px;
+    top: 0;
     left: -100%;
     background: #111;
     height: 100vh;
-    width: 90%;
+    width: 80%;
     text-align: center;
     display: block;
     transition: all 0.5s ease;
     overflow: visible !important;
     border-radius: 0px 20px 0px 0px;
   }
+
+
   #click:checked ~ ul{
     left: 0;
   }

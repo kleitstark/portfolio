@@ -32,10 +32,24 @@ $(document).on('click', 'ul li', function() {
 });
 
 //sticky nav on scroll
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY)
-})
+
+
+
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+  var x = $( "#click" );
+  if ($(x).prop("checked") == true) {
+      $("#header").addClass("sticky2");
+  } else {
+    if ($(x).prop("checked") == false && scroll > 30) {
+      $("#header").addClass("sticky");
+    } else if ($(x).prop("checked") == false && scroll < 30) {
+      $("#header").removeClass("sticky");
+    }
+  }
+});   
+
 
 //collapse navbar  NICE JQUERY :)
 
