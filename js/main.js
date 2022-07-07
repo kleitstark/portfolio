@@ -37,8 +37,11 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY)
 })
 
+//collapse navbar  NICE JQUERY :)
 
-
+$(".link-page").on('click', function() {
+  $("#click").prop("checked", false);
+})
 
 
 //parallax
