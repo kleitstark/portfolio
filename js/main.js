@@ -16,6 +16,9 @@ particlesJS.load('particles-js', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1
   console.log('callback - particles.js config loaded');
 });    
 
+
+
+
 //Typed String
 var typed = new Typed(".auto-type", {
   strings: ["Francesco Santoro","a Software Developer", "a Musician", "a Drummer", "Sleeping :)"],
@@ -30,6 +33,8 @@ var typed = new Typed(".auto-type", {
 $(document).on('click', 'ul li', function() {
   $(this).addClass('active').siblings().removeClass('active')
 });
+
+
 
 //sticky nav on scroll
 
@@ -51,6 +56,8 @@ $(window).scroll(function() {
   }
 });  
 
+
+
 //active li on scroll
 
 $(window).scroll(function() { 
@@ -69,11 +76,17 @@ $(window).scroll(function() {
 });
 
 
+
+
+
 //collapse navbar  NICE JQUERY :)
 
 $(".link-page").on('click', function() {
   $("#click").prop("checked", false);
 })
+
+
+
 
 
 /*parallax

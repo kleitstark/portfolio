@@ -12,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: rgb(42, 42, 42);
+  background-image: linear-gradient(to left top, #1d1d1d, #212121, #262526, #2a2a2a, #2f2e2e);;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -297,7 +297,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 25px 10% 10px 10%;
+  padding: 20px 0% 10px 0%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -359,21 +359,21 @@ ul li.active a {
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
+  border: 10px solid rgb(70 70 70);
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 0 30px rgb(0 0 0 / 55%);
   text-align: center;
-  animation: animate 3s linear infinite;
+  animation: animate 4s linear infinite;
 }
 
 
 @keyframes animate {
   0%,100% {
-    transform: translateY(2px);
+    transform: translateY(4px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
 }
 
@@ -440,9 +440,9 @@ input[type="checkbox"]{
 
 
 
-@media (max-width: 1200px){
+@media (min-width: 845px){
   header{
-    padding: 25px 40px 0 50px;
+    padding: 20px 0% 10px 4%;
   }
   
 
@@ -457,6 +457,12 @@ input[type="checkbox"]{
 
 
 @media (max-width: 844px) {
+
+  header{
+    padding: 35px 6% 10px 4%;
+  }
+
+
   header .menu-btn i{
     display: block;
   }
@@ -489,8 +495,8 @@ input[type="checkbox"]{
 
   header .logo {
     margin-left: 0;
-    width: 150px;
-    height: 24px;
+    width: 160px;
+    height: 28px;
   }
 
   .fas {
