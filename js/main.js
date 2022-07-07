@@ -33,7 +33,6 @@ $(document).on('click', 'ul li', function() {
 
 //sticky nav on scroll
 
-
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
   var x = $( "#click" );
@@ -52,8 +51,22 @@ $(window).scroll(function() {
   }
 });  
 
+//active li on scroll
 
+$(window).scroll(function() { 
+  var scroll = $(window).scrollTop();
 
+  console.log(scroll);
+  if (scroll < 260) {
+    $('.home-li').addClass('active').siblings().removeClass('active')
+  } 
+  else if (scroll > 260 && scroll < 960) {
+    $('.about').addClass('active').siblings().removeClass('active')
+  }
+  else {
+    $('.portfolio').addClass('active').siblings().removeClass('active')
+  }
+});
 
 
 //collapse navbar  NICE JQUERY :)
@@ -63,7 +76,13 @@ $(".link-page").on('click', function() {
 })
 
 
-//parallax
+/*parallax
 
-                                         
-  
+$(window).scroll(function(){
+  parallax();
+})
+
+function parallax() {
+ $('.parallax--bg').css('background-position', 'center'+(wScroll)+'px')                              
+}
+*/
