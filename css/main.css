@@ -481,7 +481,6 @@ input[type="checkbox"]{
     color: #fff;
   }
   
- 
   header ul li{
     width: 100%;
     margin: 40px 0;
@@ -495,6 +494,10 @@ input[type="checkbox"]{
   }
   #click:checked ~ ul li a{
     margin-left: 0px;
+  }
+
+  * {
+    scroll-behavior: smooth;
   }
 
 }
