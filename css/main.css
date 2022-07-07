@@ -268,6 +268,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -275,7 +276,7 @@ section {
 width: 100%;
 height: 100vh;
 margin: 0;
-background-color: rgb(59, 59, 59);   
+background-image: linear-gradient(to left top, #1d1d1d, #212121, #262526, #2a2a2a, #2f2e2e);
 }
 
 
@@ -292,13 +293,17 @@ justify-content:center;
 }
 
 
+.header {
+  position: sticky;
+}
+
 
 nav {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 5px 27% 10px 27%;
+  padding: 5px 10% 10px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -328,34 +333,35 @@ nav ul li a {
 
 
 nav ul li a:hover {
-  -webkit-text-stroke: 2px #fff;
-  color: transparent;
+  color: #d3fd3a;
+}
+
+ul li.active a {
+  color: #d3fd3a;
 }
 
 
 .profile-avatar {
   position: relative;
-  display: inline-block;
+  display: inline;
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  border: 8px solid rgb(96, 96, 96);
+  border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 0 30px rgb(0 0 0 / 55%);
   text-align: center;
-}
-
-.profile-avatar  {
   animation: animate 3s linear infinite;
 }
+
 
 @keyframes animate {
   0%,100% {
     transform: translateY(2px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 }
 
@@ -380,20 +386,20 @@ nav ul li a:hover {
 
 .type-wrap {
   position: relative;
-  display: inline-block;
+  display: inherit;
   width: auto;
   height: auto;
   padding: 20px;
 }
 
 .type-wrap h1 {
-  font-size: 40px;
+  font-size: 60px;
   color: #fff;
   text-transform: uppercase;
 }
 
 .type-wrap span {
-  color: #f68e06;
+  color: #d3fd3a;
 }
 
 
@@ -414,6 +420,7 @@ nav .menu-btn i{
   cursor: pointer;
   display: none;
 }
+
 input[type="checkbox"]{
   display: none;
 }
@@ -443,11 +450,13 @@ input[type="checkbox"]{
     text-align: center;
     display: block;
     transition: all 0.3s ease;
-    overflow: visible!important;
+    overflow: visible !important;
   }
   #click:checked ~ ul{
     left: 0;
   }
+  
+ 
   nav ul li{
     width: 100%;
     margin: 40px 0;
@@ -462,12 +471,12 @@ input[type="checkbox"]{
   #click:checked ~ ul li a{
     margin-left: 0px;
   }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: cyan;
-  }
+
 }
+
+
+
+
 
 
 
@@ -478,7 +487,7 @@ input[type="checkbox"]{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5px 27% 10px 27%;
+  padding: 5px 10% 10px 10%;
 }
 
 .container-portfolio {
@@ -489,5 +498,5 @@ input[type="checkbox"]{
   align-items: center;
   background-color: #485461;
   text-align: center;
-  padding: 5px 27% 10px 27%;
+  padding: 5px 10% 10px 10%;
 }

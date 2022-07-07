@@ -24,6 +24,18 @@ var typed = new Typed(".auto-type", {
   loop: true
 })
 
+
+//active nav
+
+$(document).on('click', 'ul li', function() {
+  $(this).addClass('active').siblings().removeClass('active')
+});
+
+
+
+
+
+
 //parallax
 
                                          
