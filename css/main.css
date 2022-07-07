@@ -452,22 +452,24 @@ input[type="checkbox"]{
 @media (max-width: 920px) {
   header .menu-btn i{
     display: block;
-
   }
+
+
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
   header ul{
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: -100%;
     background: #111;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     text-align: center;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     overflow: visible !important;
+    border-radius: 0px 20px 0px 0px;
   }
   #click:checked ~ ul{
     left: 0;
@@ -490,7 +492,7 @@ input[type="checkbox"]{
     margin-left: -100%;
     display: block;
     font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   #click:checked ~ ul li a{
     margin-left: 0px;
