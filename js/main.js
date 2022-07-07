@@ -31,6 +31,11 @@ $(document).on('click', 'ul li', function() {
   $(this).addClass('active').siblings().removeClass('active')
 });
 
+//sticky nav on scroll
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY)
+})
 
 
 
