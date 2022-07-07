@@ -314,7 +314,8 @@ header.sticky2 {
 }
 
 header .logo {
-  width: 110px;
+  width: 180px;
+  height: 30px;
   margin-left: 20%;
 }
 

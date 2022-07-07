@@ -34,8 +34,6 @@ $(document).on('click', 'ul li', function() {
 //sticky nav on scroll
 
 
-
-
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
   var x = $( "#click" );
@@ -49,6 +47,8 @@ $(window).scroll(function() {
     }
   }
 });   
+
+
 
 
 //collapse navbar  NICE JQUERY :)
