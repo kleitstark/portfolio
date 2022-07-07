@@ -40,22 +40,19 @@ $(window).scroll(function() {
   if ($(x).prop("checked") == true) {
       $("#header").addClass("sticky2");
   } else {
-    if ($(x).prop("checked") == false && scroll > 30) {
-        $("#header").addClass("sticky");
-    } else if ($(x).prop("checked") == false && scroll < 30) {
-        $("#header").removeClass("sticky");
-    } else if ($(x).prop("checked") == true && scroll > 30) {
-        $(".sticky").css('background', '');
-    }
+    if ($(x).prop("checked") == false && scroll < 30) {
+      $("#header").removeClass("sticky");
+    } else {
+        if ($(x).prop("checked") == false && scroll > 30) {
+          $("#header").addClass("sticky");
+        } else if($(x).prop("checked") == true && scroll > 30) {
+          $(".sticky").css('background', '');
+        }
+      } 
   }
 });  
 
-var scroll = $(window).scrollTop();
-var x = $( "#click" );
 
-if ($(x).prop("checked") == true && scroll > 30) {
-  $(".sticky").css('background', '');
-}
 
 
 

@@ -476,11 +476,10 @@ input[type="checkbox"]{
     display: block;
     transition: all 0.5s ease;
     overflow: visible !important;
-    border-radius: 0px 20px 0px 0px;
   }
 
   header.sticky {
-    padding: 5px 50px;
+    padding: 15px 50px;
   }
 
 
