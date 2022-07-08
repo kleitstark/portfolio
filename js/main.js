@@ -64,10 +64,10 @@ $(window).scroll(function() {
   var scroll = $(window).scrollTop();
 
   console.log(scroll);
-  if (scroll < 260) {
+  if (scroll < 500) {
     $('.home-li').addClass('active').siblings().removeClass('active')
   } 
-  else if (scroll > 260 && scroll < 960) {
+  else if (scroll > 500 && scroll < 1300) {
     $('.about').addClass('active').siblings().removeClass('active')
   }
   else {

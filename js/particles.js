@@ -23,7 +23,7 @@ var pJS = function(tag_id, params){
         value: 400,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 1500
         }
       },
       color: {
@@ -55,7 +55,7 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 20,
+        value: 50,
         random: false,
         anim: {
           enable: false,
@@ -66,7 +66,7 @@ var pJS = function(tag_id, params){
       },
       line_linked: {
         enable: true,
-        distance: 100,
+        distance: 70,
         color: '#fff',
         opacity: 1,
         width: 1
@@ -102,7 +102,7 @@ var pJS = function(tag_id, params){
       },
       modes: {
         grab:{
-          distance: 100,
+          distance: 70,
           line_linked:{
             opacity: 1
           }
@@ -113,7 +113,7 @@ var pJS = function(tag_id, params){
           duration: 0.4
         },
         repulse:{
-          distance: 200,
+          distance: 300,
           duration: 0.4
         },
         push:{
