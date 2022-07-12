@@ -55,10 +55,13 @@ $("#click").change( function() {
   var y = $( "#click" );
   if ($(y).is(':checked')){
     $("#header").removeClass("sticky");
+    $(".fas").css("color", "#fede28");
   } else if ($(y).not(':checked') && scroll < 30) {
     $("#header").removeClass("sticky");
+    $(".fas").css("color", "white");
   } else if ($(y).not(':checked') && scroll > 30) {
     $("#header").addClass("sticky");
+    $(".fas").css("color", "white");
   }
 })
 
@@ -90,8 +93,8 @@ $(window).scroll(function() {
 
 $(".link-page").on('click', function() {
   $("#click").prop("checked", false);
+  $(".fas").css("color", "white");
 })
-
 
 
 
