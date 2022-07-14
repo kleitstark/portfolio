@@ -305,8 +305,8 @@ header {
 }
 
 header.sticky {
-  padding: 5px 100px;
-  background-image: linear-gradient(to bottom, #141414, #141414, #131313, #131313, #121212);
+  padding: 5px 10%;
+  background-image: linear-gradient(to top, #1e1e1e, #1b1b1b, #181818, #151515, #121212);
 }
 
 header.sticky2 {
@@ -479,7 +479,7 @@ input[type="checkbox"]{
   
 
   header .logo {
-    margin-left: 1%;
+    margin-left: 0%;
   }
 
   header ul {
