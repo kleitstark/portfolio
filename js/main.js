@@ -21,7 +21,7 @@ particlesJS.load('particles-js', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1
 
 //Typed String
 var typed = new Typed(".auto-type", {
-  strings: ["Francesco Santoro","a Software Developer", "a Musician", "a Drummer", "going to sleep 😴"],
+  strings: ["Francesco Santoro","a Software Developer", "a Musician", "a Drummer"],
   typeSpeed: 60,
   backSpeed: 15,
   loop: true
