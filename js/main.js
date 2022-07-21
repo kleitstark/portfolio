@@ -21,8 +21,8 @@ particlesJS.load('particles-js', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1
 
 //Typed String
 var typed = new Typed(".auto-type", {
-  strings: ["Francesco Santoro","a Software Developer", "a Musician", "a Drummer"],
-  typeSpeed: 60,
+  strings: ["Francesco Santoro  ","a Software Developer  ", "a Musician  ", "a Drummer  "],
+  typeSpeed: 65,
   backSpeed: 15,
   loop: true
 })
@@ -80,7 +80,7 @@ $(window).scroll(function() {
     $('.about').addClass('active').siblings().removeClass('active')
   }
   else {
-    $('.portfolio').addClass('active').siblings().removeClass('active')
+    $('.resume').addClass('active').siblings().removeClass('active')
   }
 });
 

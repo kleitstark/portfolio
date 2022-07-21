@@ -268,6 +268,9 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -558,9 +561,6 @@ input[type="checkbox"]{
     width: 0%;
   }
 
-  * {
-    scroll-behavior: smooth;
-  }
 
   .container-about h2 {
     margin-bottom: 30px;
@@ -570,7 +570,15 @@ input[type="checkbox"]{
   .container-about {
     padding: 35px 6% 10px 4%;
   }
-  
+
+  .wrapper-skill {
+    width: 100% !important;
+    min-width: 300px !important;
+    margin: 0 0 20px !important;
+    padding: 50px 10px !important;
+    float: none !important;
+  }
+
 
 }
 
@@ -595,7 +603,7 @@ input[type="checkbox"]{
 
 
 .container-about h2 {
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1rem;
   font-size: 30px;
   color: #fff;
@@ -603,9 +611,91 @@ input[type="checkbox"]{
   margin-bottom: 40px;
 }
 
+.wrapper-skill {
+  width: 40%;
+  min-width: 500px;
+  float: right;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: rgba(101, 101, 101, 0.352); 
+  padding: 50px 30px; 
+  margin: 11px 20px 20px;
+}
+
+
+
+
+
+
+.skill{
+
+ 
+ 
+}
+
+.skill:not(:last-child){
+  margin-bottom:30px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar{
+  position:relative;
+  background-color:rgba(255, 255, 255, 0.145);
+  padding:7px 10px;
+  border-radius:20px;
+  backdrop-filter:blur(20px);
+}
+
+
+.bar div{
+  position:relative;
+  width:0;
+  height:4px;
+  border-radius:10px;
+  background-color: #fdd228;;
+  border:1px solid #050505be;
+  box-shadow:005px rgba(252, 28, 28, 0.836);
+}
+
+#html-bar{
+  animation: html-fill 5s forwards;
+}
+
+@keyframes html-fill{
+  100%{
+    width: 90%;
+  }
+}
+
+#css-bar{
+  animation: css-fill 6s forwards;
+}
+
+@keyframes css-fill{
+  100%{
+    width: 90%;
+  }
+}
+
+#js-bar{
+  animation: js-fill 7s forwards;
+}
+
+@keyframes js-fill{
+  100%{
+    width: 70%;
+  }
+}
 
 .container-about span {
-  color: #fdd228;;
+  color: #fdd228;
+  font-weight: 600;
 }
 
 
@@ -626,57 +716,56 @@ input[type="checkbox"]{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container-portfolio {
+.container-resumes {
   background-color: #fff;
-  padding: 11% 10% 10% 10%;
+  padding: 5% 10% 2% 14%;
 }
 
-.card-portfolio {
+.card-resumes {
   width: 100%;
-  height: 70vh;
-  background-image: radial-gradient(circle, #383838, #353535, #333333, #303030, #2e2e2e);
+  height: 50vh;
+  background-color: rgb(238, 238, 238);
   padding: 3% 5% 10% 5%;
-  box-shadow: 0 0 30px rgb(0 0 0 / 40%);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-left: 5px solid #fdd228;
 }
 
+.card-resumes:before {
+  position: absolute;
+    content: "";
+    width: 5px;
+    height: 40px;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+    background: #fdd228;
+}
 
-.container-portfolio h2 {
-  font-weight: 600;
+.container-resumes h2 {
+  font-weight: 500;
   letter-spacing: 0.1rem;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(33, 33, 33);
   letter-spacing: 0.2em;
   margin-bottom: 40px;
 }
 
-.container-portfolio span {
+.container-resumes span {
   color: #fdd228;;
+  font-weight: 600;
 }
 
 
-.container-portfolio p {
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.1em;
+.container-resumes p {
+  color: rgb(110, 110, 110);
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
 }
 
 
 @media (max-width: 844px) {
-  .container-portfolio h2 {
+  .container-resumes h2 {
     margin-bottom: 30px;
     margin-top: 50px;
   }
