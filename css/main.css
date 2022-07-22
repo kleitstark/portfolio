@@ -491,6 +491,10 @@ input[type="checkbox"]{
 
 @media (max-width: 844px) {
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   header{
     padding: 35px 6% 10px 4%;
   }
@@ -510,7 +514,7 @@ input[type="checkbox"]{
     left: -100%;
     background-image: linear-gradient(to bottom, #141414, #141414, #131313, #131313, #121212);
     height: 100vh;
-    width: 80%;
+    width: 85%;
     text-align: center;
     display: block;
     transition: all 0.3s ease-in;
@@ -611,6 +615,9 @@ input[type="checkbox"]{
   margin-bottom: 40px;
 }
 
+
+
+
 .wrapper-skill {
   width: 40%;
   min-width: 500px;
@@ -621,9 +628,6 @@ input[type="checkbox"]{
   padding: 50px 30px; 
   margin: 11px 20px 20px;
 }
-
-
-
 
 
 
@@ -645,16 +649,13 @@ input[type="checkbox"]{
 }
 
 .bar{
-  position:relative;
   background-color:rgba(255, 255, 255, 0.145);
   padding:7px 10px;
   border-radius:20px;
-  backdrop-filter:blur(20px);
 }
 
 
 .bar div{
-  position:relative;
   width:0;
   height:4px;
   border-radius:10px;
