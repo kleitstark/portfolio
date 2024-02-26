@@ -600,7 +600,7 @@ input[type="checkbox"]{
 }
 
 .ccc {
-  background-image: linear-gradient(to left, #a4a4a4, #b3b3b3, #c3c3c3, #d3d3d3, #e3e3e3);
+  background-image: linear-gradient(to bottom, #515151, #676767, #7e7e7e, #969696, #aeaeae);
 }
 
 /*Container about*/
@@ -617,9 +617,23 @@ input[type="checkbox"]{
   font-weight: 500;
   letter-spacing: 0.1rem;
   font-size: 30px;
-  color: #121212;
+  color: #e1e1e1;
   letter-spacing: 0.2em;
   margin-bottom: 40px;
+}
+
+
+.container-about span {
+  color: #fdd228;
+  font-weight: 600;
+}
+
+
+.container-about p {
+  color: #e1e1e1;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
 }
 
 
@@ -711,23 +725,6 @@ input[type="checkbox"]{
   }
 }
 
-.container-about span {
-  color: #fdd228;
-  font-weight: 600;
-}
-
-
-.container-about p {
-  color: #121212;
-  font-size: 17px;
-  line-height: 35px;
-  letter-spacing: 0.03em;
-}
-
-
-
-
-
 
 
 
@@ -774,7 +771,7 @@ input[type="checkbox"]{
 
 
 .container-resumes p {
-  color: rgb(110, 110, 110);
+  color: rgb(17, 17, 17);
   font-size: 17px;
   line-height: 35px;
   letter-spacing: 0.03em;
