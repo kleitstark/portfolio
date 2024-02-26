@@ -876,9 +876,9 @@ input[type="checkbox"]{
 
 @media screen and (max-width: 1500px) {
   .myButton {
-    width: 15%;
-    padding: 10px;
-    font-size: 15px; 
+    width: 15% !important;
+    padding: 10px !important;
+    font-size: 15px !important; 
   }
   .myButton:active  {
     background-color: #f3da4b !important;
@@ -894,9 +894,9 @@ input[type="checkbox"]{
 
 @media screen and (max-width: 844px) {
   .myButton {
-    width: 40%; 
-    padding: 10px;
-    font-size: 15px; 
+    width: 40% !important; 
+    padding: 10px !important;
+    font-size: 15px !important; 
   }
   .myButton:active  {
     background-color: #f3da4b !important;
@@ -910,9 +910,9 @@ input[type="checkbox"]{
 
 @media screen and (max-width: 480px) {
   .myButton {
-    width: 40%; 
-    padding: 10px; 
-    font-size: 15px; 
+    width: 40% !important; 
+    padding: 10px !important; 
+    font-size: 15px !important; 
   }
   .myButton:active  {
     background-color: #f3da4b !important;
