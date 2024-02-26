@@ -852,6 +852,31 @@ input[type="checkbox"]{
   align-items: center;
 }
 
+.myButton {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgba(101, 101, 101, 0.352);
+  border-color: rgba(101, 101, 101, 0.352);
+  width: 15%;
+}
+
+.myButton span {
+  color: white;
+  right: -20px;
+
+}
+
+.myButton:hover  {
+  background-color: #f3da4b;
+  border-color: #f3da4b;
+}
+
+.myButton:hover span {
+  color: black;
+}
+
+
+
 
 
 .footer {
