@@ -861,9 +861,7 @@ input[type="checkbox"]{
 }
 
 .myButton .cv {
-  color: white;
-  right: -20px;
-
+  color: white !important;
 }
 
 .myButton:hover  {
@@ -872,7 +870,7 @@ input[type="checkbox"]{
 }
 
 .myButton:hover .cv {
-  color: black;
+  color: black !important;
 }
 
 
