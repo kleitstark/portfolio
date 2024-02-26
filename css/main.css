@@ -860,7 +860,7 @@ input[type="checkbox"]{
   width: 15%;
 }
 
-.myButton span {
+.myButton .cv {
   color: white;
   right: -20px;
 
@@ -871,7 +871,7 @@ input[type="checkbox"]{
   border-color: #f3da4b;
 }
 
-.myButton:hover span {
+.myButton:hover .cv {
   color: black;
 }
 
