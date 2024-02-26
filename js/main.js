@@ -101,13 +101,16 @@ $(document).ready(function() {
       } else if (scrollPosition >= 1000 && scrollPosition < 2076) {
           $('#menu li').removeClass('active');
           $('#menu li a[href="#about"]').parent().addClass('active');
-      } else if (scrollPosition >= 2076 && scrollPosition < 3000) {
+      } else if (scrollPosition >= 2076 && scrollPosition < 3100) {
         $('#menu li').removeClass('active');
         $('#menu li a[href="#resumes"]').parent().addClass('active');
-      }  else if (scrollPosition >= 3000) {
+      } else if (scrollPosition >= 3100 && scrollPosition < 4000) {
+        $('#menu li').removeClass('active');
+        $('#menu li a[href="#carousel"]').parent().addClass('active');
+      } else if (scrollPosition >= 4000) {
         $('#menu li').removeClass('active');
         $('#menu li a[href="#contact"]').parent().addClass('active');
-      }
+      } 
   }
 
   // Attiva la funzione quando si scorre la pagina
@@ -131,6 +134,22 @@ $(".link-page").on('click', function() {
 })
 
 
+
+//Nasconde hero per mostrare solo particles nella sezione carousel
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var heroElement = document.getElementById("hero"); 
+  
+  if (scrollPosition > 500) {
+      if (heroElement) {
+          heroElement.style.display = 'none';
+      }
+  } else {
+      if (heroElement) {
+          heroElement.style.display = 'flex';
+      }
+  }
+});
 
 
 
