@@ -4,11 +4,11 @@ function closeLoader() {
   setTimeout(() => {
     const loader = document.querySelector('.loader');
     loader.style.opacity = '0';
-  }, 1100);
+  }, 1000);
   setTimeout(() => {
     const loader = document.querySelector('.loader');
     loader.style.display = 'none';
-  },1500);
+  },1200);
 }
 closeLoader()
 
