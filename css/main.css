@@ -801,9 +801,9 @@ input[type="checkbox"]{
   height: 80vh;
   margin: 10%; 
   border-style: solid;
-  border-color: #fdd2285c;
+  border-color: #55555589;
   border-radius: 8px;
-  border-width: 5px;
+  border-width: 8px;
 }
 
 @media (max-width: 844px) {
@@ -813,7 +813,7 @@ input[type="checkbox"]{
     max-width: 80%;
     margin: 30px auto; 
     border-style: solid;
-    border-color: #fdd2285c;
+    border-color: #55555589;
     border-radius: 8px;
     border-width: 5px;
   }
