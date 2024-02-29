@@ -140,7 +140,7 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var heroElement = document.getElementById("hero"); 
   
-  if (scrollPosition > 500) {
+  if (scrollPosition > 900) {
       if (heroElement) {
           heroElement.style.display = 'none';
       }
@@ -151,6 +151,28 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+/* To Top Button*/
+let backToTopButton = document.querySelector('.js-back-to-top-button')
+
+const onscroll = () => {
+  if (window.scrollY > 800) {
+    backToTopButton.classList.add('is-active')
+  } else {
+    backToTopButton.classList.remove('is-active')
+  }
+}
+
+window.addEventListener('scroll', onscroll)
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+backToTopButton.addEventListener('click', scrollToTop)
 
 
 

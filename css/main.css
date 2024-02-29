@@ -972,6 +972,46 @@ input[type="checkbox"]{
 }
 
 
+/* To Top Button*/
+.back-to-top-button {
+  border-radius: 50px;
+  border: none;
+  background: white;
+  position: fixed;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  background-color: #f3da4ba4;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce-up ease-in-out infinite 5s;
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s ease-in-out;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 .footer {
   padding: 15px;
@@ -1087,8 +1127,6 @@ input[type="checkbox"]{
   border-radius:50%;
   margin:08px;
 }
-
-
 
 .footer .social a:hover{
   color: #fdd228;
