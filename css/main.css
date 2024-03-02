@@ -1013,6 +1013,7 @@ input[type="checkbox"]{
   opacity: 0;
   pointer-events: none;
   transition: .2s ease-in-out;
+  color: black;
 
   &.is-active {
     opacity: 1;
