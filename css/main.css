@@ -891,6 +891,12 @@ input[type="checkbox"]{
   column-gap: 20px;
 }
 
+.contact-btn{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .class1 {
@@ -906,6 +912,7 @@ input[type="checkbox"]{
   background-color: rgba(101, 101, 101, 0.352);
   border-color: rgba(101, 101, 101, 0.352);
   width: 15%;
+  margin: 10px;
 }
 
 .myButton .cv {
@@ -936,6 +943,10 @@ input[type="checkbox"]{
   .myButton:active .cv {
     color: black !important;
   }
+  .contact-btn {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 
@@ -954,6 +965,10 @@ input[type="checkbox"]{
   .myButton:active .cv {
     color: black !important;
   }
+  .contact-btn {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -969,6 +984,10 @@ input[type="checkbox"]{
   
   .myButton:active .cv {
     color: black !important;
+  }
+  .contact-btn {
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -1113,6 +1132,10 @@ input[type="checkbox"]{
   color: #fdd228;
   text-decoration: none;
   cursor: pointer;
+}
+
+.footer .privacy p {
+  color: rgba(79, 79, 79, 0.84);
 }
 
 
