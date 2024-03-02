@@ -734,7 +734,6 @@ input[type="checkbox"]{
 
 
 .container-resumes {
-
   padding: 8% 14% 14% 14%;
 }
 
@@ -777,6 +776,10 @@ input[type="checkbox"]{
   font-size: 17px;
   line-height: 35px;
   letter-spacing: 0.03em;
+}
+
+#carousel {
+  padding:25% 14% 14% 14%;
 }
 
 
