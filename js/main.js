@@ -139,14 +139,17 @@ $(".link-page").on('click', function() {
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var heroElement = document.getElementById("hero"); 
-  
-  if (scrollPosition > 900) {
+
+  if (scrollPosition > 700) {
       if (heroElement) {
-          heroElement.style.display = 'none';
+          heroElement.style.opacity = 0;
+          heroElement.style.transition = 'opacity 0.3s ease'
       }
   } else {
       if (heroElement) {
           heroElement.style.display = 'flex';
+          heroElement.style.opacity = 100;
+          heroElement.style.transition = 'opacity 0.5s ease'
       }
   }
 });
@@ -156,7 +159,7 @@ window.addEventListener('scroll', function() {
 let backToTopButton = document.querySelector('.js-back-to-top-button')
 
 const onscroll = () => {
-  if (window.scrollY > 800) {
+  if (window.scrollY > 1000) {
     backToTopButton.classList.add('is-active')
   } else {
     backToTopButton.classList.remove('is-active')
@@ -173,7 +176,6 @@ const scrollToTop = () => {
 }
 
 backToTopButton.addEventListener('click', scrollToTop)
-
 
 
 
