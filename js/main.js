@@ -40,7 +40,7 @@ const myText = new AutoTyping({
 
 //active nav
 
-$(document).on('click', 'ul li', function() {
+$(document).on('click', 'ul li a', () => {
   $(this).addClass('active').siblings().removeClass('active')
 });
 
@@ -75,6 +75,7 @@ $("#click").change( function() {
   }
 })
 
+
 /*hide show social icon 
 $("#click").change( function() {
   var y = $( "#click" );
@@ -93,21 +94,22 @@ $(document).ready(function() {
   // Funzione per aggiungere la classe active agli elementi della navbar
   function setActiveNav() {
       var scrollPosition = $(document).scrollTop();
+      console.log(scrollPosition)
 
       // Verifica la posizione dello scroll e aggiungi la classe active di conseguenza
-      if (scrollPosition < 1000) {
+      if (scrollPosition < 807) {
           $('#menu li').removeClass('active'); // Rimuovi la classe active da tutti gli elementi della navbar
           $('#menu li a[href="#home"]').parent().addClass('active'); // Aggiungi la classe active all'elemento della navbar corrispondente
-      } else if (scrollPosition >= 1000 && scrollPosition < 2076) {
+      } else if (scrollPosition >= 807 && scrollPosition < 1915) {
           $('#menu li').removeClass('active');
           $('#menu li a[href="#about"]').parent().addClass('active');
-      } else if (scrollPosition >= 2076 && scrollPosition < 3100) {
+      } else if (scrollPosition >= 1915 && scrollPosition < 3640) {
         $('#menu li').removeClass('active');
         $('#menu li a[href="#resumes"]').parent().addClass('active');
-      } else if (scrollPosition >= 3100 && scrollPosition < 4000) {
+      } else if (scrollPosition >= 3640 && scrollPosition < 3654) {
         $('#menu li').removeClass('active');
-        $('#menu li a[href="#carousel"]').parent().addClass('active');
-      } else if (scrollPosition >= 4000) {
+        $('#menu li a[href="#content"]').parent().addClass('active');
+      } else if (scrollPosition >= 3654) {
         $('#menu li').removeClass('active');
         $('#menu li a[href="#contact"]').parent().addClass('active');
       } 
@@ -168,7 +170,7 @@ const onscroll = () => {
 
 window.addEventListener('scroll', onscroll)
 
-const scrollToTop = () => {
+scrollToTop =  () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
