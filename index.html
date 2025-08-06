@@ -1,311 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Francesco Santoro</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ==== TODO change Favicon ==== -->
-    <link rel="icon" type="image/png" href="img/fav.ico">
+    <link rel="icon" type="image/png" href="img/fav.ico" />
 
     <!-- ==== Load Google Font ==== -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,500&display=swap"
+      rel="stylesheet"
+    />
     <!--===== Font Awesome =====-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 
     <!-- ==== Bootstrap And Other Styles ==== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.css">
-    <link rel="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.css" />
+    <link
+      rel="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css"
+    />
 
     <!--===== Main CSS =====-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <!--===== Other CSS =====-->
-    
+  </head>
 
-</head>
-
-
-
-
-<body>
+  <body>
     <!-- ==== Preloader Section Start ==== -->
     <div class="loader">
-        <div class="spinner">
-            <svg class="raquet" id="r-1">
-                <ellipse class="front" cx="44" cy="50" rx="35" ry="50" />
-                <ellipse class="middle" cx="42" cy="50" rx="35" ry="50" />
-                <ellipse class="back" cx="40" cy="50" rx="35" ry="50" />
-                <rect class="handle outer" x="40" y="100" width="10" height="42" />
-                <rect class="handle inner" x="38" y="100" width="10" height="41" />
-                <rect class="handle outer" x="35" y="100" width="10" height="40" />
-                <ellipse class="shadow" id="sor-1" cx="40" cy="50" rx="7" ry="10" />
-            </svg>
-            <svg class="raquet" id="r-2">
-                <ellipse class="back" cx="40" cy="50" rx="35" ry="50" />
-                <ellipse class="middle" cx="42" cy="50" rx="35" ry="50" />
-                <ellipse class="front" cx="44" cy="50" rx="35" ry="50" />
-                <rect class="handle outer" x="35" y="100" width="10" height="42" />
-                <rect class="handle inner" x="37" y="100" width="10" height="41" />
-                <rect class="handle outer" x="40" y="100" width="10" height="40" />
-                <ellipse class="shadow" id="sor-2" cx="44" cy="50" rx="7" ry="10" />
-            </svg>
-            <div class="ball-container">
-                <svg class="ball">
-                <circle cx="20" cy="20" r="12" />
-                </svg>
-            </div>
-            <svg class="shadow">
-                <ellipse id="sr-1" cx="70" cy="30" rx="50" ry="15"/>
-                <ellipse id="sb" cx="150" cy="30" rx="15" ry="4.5"/>
-                <ellipse id="sr-2" cx="230" cy="30" rx="50" ry="15"/>
-            </svg>
-            <h2 class="loader-text" style="font-style: Bold 700; font-size: 38px;">LOADING...</h2>
+      <div class="spinner">
+        <svg class="raquet" id="r-1">
+          <ellipse class="front" cx="44" cy="50" rx="35" ry="50" />
+          <ellipse class="middle" cx="42" cy="50" rx="35" ry="50" />
+          <ellipse class="back" cx="40" cy="50" rx="35" ry="50" />
+          <rect class="handle outer" x="40" y="100" width="10" height="42" />
+          <rect class="handle inner" x="38" y="100" width="10" height="41" />
+          <rect class="handle outer" x="35" y="100" width="10" height="40" />
+          <ellipse class="shadow" id="sor-1" cx="40" cy="50" rx="7" ry="10" />
+        </svg>
+        <svg class="raquet" id="r-2">
+          <ellipse class="back" cx="40" cy="50" rx="35" ry="50" />
+          <ellipse class="middle" cx="42" cy="50" rx="35" ry="50" />
+          <ellipse class="front" cx="44" cy="50" rx="35" ry="50" />
+          <rect class="handle outer" x="35" y="100" width="10" height="42" />
+          <rect class="handle inner" x="37" y="100" width="10" height="41" />
+          <rect class="handle outer" x="40" y="100" width="10" height="40" />
+          <ellipse class="shadow" id="sor-2" cx="44" cy="50" rx="7" ry="10" />
+        </svg>
+        <div class="ball-container">
+          <svg class="ball">
+            <circle cx="20" cy="20" r="12" />
+          </svg>
         </div>
+        <svg class="shadow">
+          <ellipse id="sr-1" cx="70" cy="30" rx="50" ry="15" />
+          <ellipse id="sb" cx="150" cy="30" rx="15" ry="4.5" />
+          <ellipse id="sr-2" cx="230" cy="30" rx="50" ry="15" />
+        </svg>
+        <h2 class="loader-text" style="font-style: Bold 700; font-size: 38px">LOADING...</h2>
+      </div>
     </div>
     <!-- ==== Preloader Section End ==== -->
 
-
     <!-- ==== Header ==== -->
     <header id="header">
-        <img src="img/logosantoro1.png" class="logo">
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <div class="icon menu-btn " id="x">
-            <i class="fas fa-bars"></i>
+      <img src="img/logosantoro1.png" class="logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <div class="icon menu-btn" id="x">
+          <i class="fas fa-bars"></i>
         </div>
-        </label>
-        <ul id="menu">
-            <li class="active home-li link-page underline-animation"><a href="#home">Home</a></li>
-            <li class="about link-page underline-animation"><a href="#about" >About me</a></li>
-            <li class="resumes link-page underline-animation"><a href="#resumes">Resumes</a></li>
-            <li class="resumes link-page underline-animation"><a href="#carousel">Content</a></li>
-            <li class="contact link-page underline-animation"><a href="#contact">Contact</a></li>
-        </ul>
+      </label>
+      <ul id="menu">
+        <li class="active home-li link-page underline-animation"><a href="#home">Home</a></li>
+        <li class="about link-page underline-animation"><a href="#about">About me</a></li>
+        <li class="resumes link-page underline-animation"><a href="#resumes">Resumes</a></li>
+        <li class="resumes link-page underline-animation"><a href="#carousel">Content</a></li>
+        <li class="contact link-page underline-animation"><a href="#contact">Contact</a></li>
+      </ul>
     </header>
     <!-- ==== Header ==== -->
 
-
     <!-- ==== Home Section Start ==== -->
     <section id="home">
-        <div id="particles-js">
-            <!-- <img src="/img/bb.png" style="width: 100%; height: 100%;">  -->
-            <div id="hero" class="hero">
-                <div class="profile-avatar">
-                    <img src="img/Cropped_Image.png" class="avatar">
-                </div>
-                <div class="type-wrap">
-                    <h1>HI! I'm <span id="typed" class="auto-type"></span></h1>
-                </div>
-            </div>
+      <div id="particles-js">
+        <!-- <img src="/img/bb.png" style="width: 100%; height: 100%;">  -->
+        <div id="hero" class="hero">
+          <div class="profile-avatar">
+            <img src="img/IMG_7918 2.jpg" class="avatar" />
+          </div>
+          <div class="type-wrap">
+            <h1>
+              HI! I'm
+              <span id="typed" class="auto-type"></span>
+            </h1>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ==== Home Section End ==== -->
 
     <div class="ccc">
-     <!-- ==== About Section Start ==== -->
-    <section id="about">
+      <!-- ==== About Section Start ==== -->
+      <section id="about">
         <div class="container-about">
-            <div class="col-md-12 card-about">
-            <h2><span>A</span>bout me</h2>
+          <div class="col-md-12 card-about">
+            <h2>
+              <span>A</span>
+              bout me
+            </h2>
             <div class="wrapper-skill">
-                <div class="skill">
-                    <div class="details">
-                        <span>HTML</span>
-                        <span style="color: rgb(185, 185, 185);">90%</span>
-                    </div>
-                    <div class="bar">
-                        <div id="html-bar"></div>
-                    </div>
+              <div class="skill">
+                <div class="details">
+                  <span>HTML</span>
+                  <span style="color: rgb(185, 185, 185)">90%</span>
                 </div>
-                <div class="skill">
-                    <div class="details">
-                        <span>CSS</span>
-                        <span style="color: rgb(185, 185, 185);">90%</span>
-                    </div>
-                    <div class="bar">
-                        <div id="css-bar"></div>
-                    </div>
+                <div class="bar">
+                  <div id="html-bar"></div>
                 </div>
-                <div class="skill">
-                    <div class="details">
-                        <span>Javacript</span>
-                        <span style="color: rgb(185, 185, 185);">70%</span>
-                    </div>
-                    <div class="bar">
-                        <div id="js-bar"></div>
-                    </div>
+              </div>
+              <div class="skill">
+                <div class="details">
+                  <span>CSS</span>
+                  <span style="color: rgb(185, 185, 185)">90%</span>
                 </div>
-                <div class="skill">
-                    <div class="details">
-                        <span>Angular</span>
-                        <span style="color: rgb(185, 185, 185);">70%</span>
-                    </div>
-                    <div class="bar">
-                        <div id="ang-bar"></div>
-                    </div>
+                <div class="bar">
+                  <div id="css-bar"></div>
                 </div>
+              </div>
+              <div class="skill">
+                <div class="details">
+                  <span>Javacript</span>
+                  <span style="color: rgb(185, 185, 185)">70%</span>
+                </div>
+                <div class="bar">
+                  <div id="js-bar"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="details">
+                  <span>Angular</span>
+                  <span style="color: rgb(185, 185, 185)">70%</span>
+                </div>
+                <div class="bar">
+                  <div id="ang-bar"></div>
+                </div>
+              </div>
             </div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
-            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s with the release of
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem
+              Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen book. It has survived
+              not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+              software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It has survived not only
+              five centuries, but also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+              text of the printing and typesetting industry.
+            </p>
+          </div>
         </div>
-    </section>
-    <section id="resumes">
+      </section>
+      <section id="resumes">
         <div class="container-resumes">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><span>R</span>esumes</h2>
-                    <div class="ezy__careers15 light">
-                        <div class="container">
-                            <!-- card start -->
-                                <div class="col-12">
-                                    <div class="ezy__careers15-card p-3 p-md-4">
-                                        <div class="row align-items-center w-100">
-                                            <div class="col-12 col-md-2">
-                                                <div class="ezy__careers15-text mx-auto">
-                                                    <p class="company-name">PWC Italy</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-7 mt-3 mt-md-0">
-                                                <div>
-                                                    <a><h4 class="fw-bold"> AI Software Developer</h4></a>
-                                                    <h5><span>Pwc Italy</span> - May 2024</h5>
-                                                </div>
-                                                <div class="mt-4">
-                                                    <p>Team member of <a>AWS CloudWatch</a>. I work in the CloudWatch API Team where we are responsible for the entire life-cycle of the software, from requirement analysis to deploy and maintenance. We provide customers a monitoring tool to publish metrics about their service or access metrics related to other AWS Services.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card end -->   
-                                <!-- card start -->
-                                <div class="col-12 mt-4">
-                                    <div class="ezy__careers15-card p-3 p-md-6">
-                                        <div class="row align-items-center w-100">
-                                            <div class="col-12 col-md-2">
-                                                <div class="ezy__careers15-text mx-auto">
-                                                    <p class="company-name">MINSAIT<br>INDRA Company</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-7 mt-3 mt-md-0">
-                                                <div>
-                                                    <a><h4 class="fw-bold">Software Developer</h4></a>
-                                                    <h5><span>Minsait - INDRA Company</span> - April 2021 - April 2024</h5>
-                                                </div>
-                                                <div class="mt-4">
-                                                    <p>Team member of <a>AWS CloudWatch</a>. I work in the CloudWatch API Team where we are responsible for the entire life-cycle of the software, from requirement analysis to deploy and maintenance. We provide customers a monitoring tool to publish metrics about their service or access metrics related to other AWS Services.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card end -->
+          <div class="row">
+            <div class="col-md-12">
+              <h2>
+                <span>R</span>
+                esumes
+              </h2>
+              <div class="ezy__careers15 light">
+                <div class="container">
+                  <!-- card start -->
+                  <div class="col-12">
+                    <div class="ezy__careers15-card p-3 p-md-4">
+                      <div class="row align-items-center w-100">
+                        <div class="col-12 col-md-2">
+                          <div class="ezy__careers15-text mx-auto">
+                            <p class="company-name">PWC Italy</p>
+                          </div>
                         </div>
+                        <div class="col-12 col-md-7 mt-3 mt-md-0">
+                          <div>
+                            <a><h4 class="fw-bold">AI Software Developer</h4></a>
+                            <h5>
+                              <span>Pwc Italy</span>
+                              - May 2024
+                            </h5>
+                          </div>
+                          <div class="mt-4">
+                            <p>
+                              Team member of
+                              <a>AWS CloudWatch</a>
+                              . I work in the CloudWatch API Team where we are responsible for the
+                              entire life-cycle of the software, from requirement analysis to deploy
+                              and maintenance. We provide customers a monitoring tool to publish
+                              metrics about their service or access metrics related to other AWS
+                              Services.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <!-- card end -->
+                  <!-- card start -->
+                  <div class="col-12 mt-4">
+                    <div class="ezy__careers15-card p-3 p-md-6">
+                      <div class="row align-items-center w-100">
+                        <div class="col-12 col-md-2">
+                          <div class="ezy__careers15-text mx-auto">
+                            <p class="company-name">
+                              MINSAIT
+                              <br />
+                              INDRA Company
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-7 mt-3 mt-md-0">
+                          <div>
+                            <a><h4 class="fw-bold">Software Developer</h4></a>
+                            <h5>
+                              <span>Minsait - INDRA Company</span>
+                              - April 2021 - April 2024
+                            </h5>
+                          </div>
+                          <div class="mt-4">
+                            <p>
+                              Team member of
+                              <a>AWS CloudWatch</a>
+                              . I work in the CloudWatch API Team where we are responsible for the
+                              entire life-cycle of the software, from requirement analysis to deploy
+                              and maintenance. We provide customers a monitoring tool to publish
+                              metrics about their service or access metrics related to other AWS
+                              Services.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card end -->
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-     <!-- ==== About Section End ==== -->
+      </section>
+      <!-- ==== About Section End ==== -->
     </div>
 
     <section id="carousel">
-        <!-- <div class="elfsight-app-aa16f714-6868-46f8-988b-266624bc21d6" style="margin-top: 10%;" data-elfsight-app-lazy></div> -->
-            <video class="video" controls autoplay muted loop>
-                <source src="img/IGdrum.mp4" type="video/mp4">
-            </video>
-            <video class="video" controls autoplay muted loop>
-                <source src="img/Igdrum2.mp4" type="video/mp4">
-            </video>
+      <!-- <div class="elfsight-app-aa16f714-6868-46f8-988b-266624bc21d6" style="margin-top: 10%;" data-elfsight-app-lazy></div> -->
+      <video class="video" controls autoplay muted loop>
+        <source src="img/IGdrum.mp4" type="video/mp4" />
+      </video>
+      <video class="video" controls autoplay muted loop>
+        <source src="img/Igdrum2.mp4" type="video/mp4" />
+      </video>
     </section>
 
     <!-- ==== Contact Section start ==== -->
     <section id="contact">
-        <div class="container-contact">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><span>C</span>ontact</h2>
+      <div class="container-contact">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>
+              <span>C</span>
+              ontact
+            </h2>
+          </div>
+          <div class="contact-section">
+            <div class="wrapper-contact">
+              <div class="c-contact">
+                <div class="class1">
+                  <span><i class="fa-regular fa-envelope"></i></span>
                 </div>
-                <div class="contact-section">
-                    <div class="wrapper-contact">
-                        <div class="c-contact">
-                            <div class="class1">
-                                <span><i class="fa-regular fa-envelope"></i></span>
-                            </div>
-                            <div class="class2">
-                                <span style="color: rgb(185, 185, 185); align-self: flex-start;">frasntoro@gmail.com</span>  
-                            </div>                      
-                        </div>
-                    </div>
-                    <div class="wrapper-contact">
-                        <div class="c-contact">
-                            <div class="class1">
-                                <span><i class="fa-solid fa-location-dot"></i></span>
-                            </div>
-                            <div class="class2">
-                                <span style="color: rgb(185, 185, 185);">Milano, Italia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 contact-btn">
-                        <button onclick="window.location.href='pdf/CV Santoro Francesco.pdf'" class="btn myButton wobble"><span class="cv">View CV</span></button>
-                        <button onclick="window.location.href='mailto:frasntoro@gmail.com'" class="btn myButton wobble"><span class="cv">Send Email</span></button>
-                    </div>
-                </div>            
+                <div class="class2">
+                  <span style="color: rgb(185, 185, 185); align-self: flex-start">
+                    frasntoro@gmail.com
+                  </span>
+                </div>
+              </div>
             </div>
+            <div class="wrapper-contact">
+              <div class="c-contact">
+                <div class="class1">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                </div>
+                <div class="class2">
+                  <span style="color: rgb(185, 185, 185)">Milano, Italia</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 contact-btn">
+              <button
+                onclick="window.location.href='pdf/CV Santoro Francesco.pdf'"
+                class="btn myButton wobble"
+              >
+                <span class="cv">View CV</span>
+              </button>
+              <button
+                onclick="window.location.href='mailto:frasntoro@gmail.com'"
+                class="btn myButton wobble"
+              >
+                <span class="cv">Send Email</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ==== Contact Section End ==== -->
-    
 
     <!-- ==== Footer Section start ==== -->
     <footer>
-        <div class="footer">
-            <div class="social">
-                <a href="https://twitter.com/frasntoro"><i class="fab fa-twitter wobble"></i></a>
-                <a href="https://www.linkedin.com/in/francesco-santoro-694711205/"><i class="fab fa-linkedin wobble"></i></a>
-            </div>
-            <div class="privacy">
-                <p>
-                    Copyright © 2024 <a href="index.html">Francesco Santoro </a> All
-                    right Reserved.
-                </p>
-            </div>
+      <div class="footer">
+        <div class="social">
+          <a href="https://twitter.com/frasntoro"><i class="fab fa-twitter wobble"></i></a>
+          <a href="https://www.linkedin.com/in/francesco-santoro-694711205/">
+            <i class="fab fa-linkedin wobble"></i>
+          </a>
         </div>
+        <div class="privacy">
+          <p>
+            Copyright © 2024
+            <a href="index.html">Francesco Santoro</a>
+            All right Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
     <!-- ==== Footer Section end ==== -->
 
-
     <!-- ==== to Top Button ==== -->
     <button class="back-to-top-button js-back-to-top-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
-          </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="30"
+        fill="currentColor"
+        class="bi bi-chevron-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+        />
+      </svg>
     </button>
     <!-- ==== to Top Button ==== -->
 
-
-
-
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src='assets/AutoTyping.js-master/src/AutoTyping.js'></script>
+    <script src="assets/AutoTyping.js-master/src/AutoTyping.js"></script>
     <script>
-        particlesJS.load('particles-js', 'assets/particles.js-master/demo/particles.json', function() {
-        console.log('callback - particles.js config loaded');
-        });
+      particlesJS.load(
+        'particles-js',
+        'assets/particles.js-master/demo/particles.json',
+        function () {
+          console.log('callback - particles.js config loaded');
+        },
+      );
     </script>
     <script src="js/main.js"></script>
- 
-    
-</body>
+  </body>
 </html>
