@@ -12,19 +12,6 @@ function closeLoader() {
 }
 closeLoader();
 
-particlesJS.load('particles-js', 'assets/particles.json', function () {
-  console.log('callback - particles.js config loaded');
-});
-
-/*Typed String
-var typed = new Typed(".auto-type", {
-  strings: ["Francesco Santoro  ","a Software Developer  ", "a Musician  ", "a Drummer  "],
-  typeSpeed: 100,
-  backSpeed: 40,
-  loop: true,
-  cursor: '_'
-})
-*/
 
 const myText = new AutoTyping({
   id: 'typed',
@@ -87,7 +74,6 @@ $(document).ready(function () {
   // Funzione per aggiungere la classe active agli elementi della navbar
   function setActiveNav() {
     var scrollPosition = $(document).scrollTop();
-    console.log(scrollPosition);
 
     // Verifica la posizione dello scroll e aggiungi la classe active di conseguenza
     if (scrollPosition < 807) {
@@ -112,12 +98,6 @@ $(document).ready(function () {
   $(window).on('scroll', setActiveNav);
 });
 
-/*
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-  console.log("Valore dello scroll:", scrollPosition);
-});
-*/
 
 //collapse navbar  NICE JQUERY :)
 
@@ -130,17 +110,36 @@ $('.link-page').on('click', function () {
 window.addEventListener('scroll', function () {
   var scrollPosition = window.scrollY;
   var heroElement = document.getElementById('hero');
+  var windowWidth = window.innerWidth;
 
-  if (scrollPosition > 700) {
-    if (heroElement) {
-      heroElement.style.opacity = 0;
-      heroElement.style.transition = 'opacity 0.3s ease';
+  // Logica per schermi con larghezza superiore a 1300px
+  if (windowWidth > 1300) {
+    if (scrollPosition > 400) {
+      if (heroElement) {
+        heroElement.style.opacity = 0;
+        heroElement.style.transition = 'opacity 0.3s ease';
+      }
+    } else {
+      if (heroElement) {
+        heroElement.style.display = 'flex';
+        heroElement.style.opacity = 100;
+        heroElement.style.transition = 'opacity 0.5s ease';
+      }
     }
-  } else {
-    if (heroElement) {
-      heroElement.style.display = 'flex';
-      heroElement.style.opacity = 100;
-      heroElement.style.transition = 'opacity 0.5s ease';
+  } 
+  // Logica per schermi con larghezza uguale o inferiore a 1300px
+  else {
+    if (scrollPosition > 300) {
+      if (heroElement) {
+        heroElement.style.opacity = 0;
+        heroElement.style.transition = 'opacity 0.3s ease';
+      }
+    } else {
+      if (heroElement) {
+        heroElement.style.display = 'flex';
+        heroElement.style.opacity = 100;
+        heroElement.style.transition = 'opacity 0.5s ease';
+      }
     }
   }
 });
